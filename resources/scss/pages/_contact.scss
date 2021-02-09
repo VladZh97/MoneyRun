@@ -1,0 +1,562 @@
+.page-contact {
+  &__inner {
+    margin-top: 73px;
+    margin-bottom: 190px;
+    position: relative;
+    letter-spacing: 1.6px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 139%;
+      background: url("../img/kontakt/tlokontakt.png");
+      top: -244px;
+      background-position: top center;
+      z-index: -1;
+    }
+  }
+  @include titleTop(70px, 100%, 99px);
+
+  &__body {
+    margin-top: 64px;
+    display: flex;
+    &-left {
+      width: 60%;
+      color: #3d1295;
+    }
+  }
+  &__text {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+    color: #3d1295;
+    &-bold {
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0;
+      color: #3d1295;
+    }
+  }
+
+  &__contact-container {
+    margin-top: 62px;
+    font-size: 28px;
+    p {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+
+  &__address-normal.page-contact__address-normal {
+    font-weight: 300;
+    span {
+      font-weight: 500;
+      margin-left: 9px;
+    }
+  }
+
+  &__mail.page-contact__mail {
+    margin-top: 21px;
+  }
+
+  &__address {
+    &-first {
+      margin-top: 57px;
+    }
+    &-second {
+      margin-top: 50px;
+    }
+  }
+
+  &__image {
+    margin-right: 25px;
+  }
+  &__aline {
+    display: flex;
+    align-items: center;
+  }
+  &__phone,
+  &__mail {
+    a {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 78px;
+    display: flex;
+  }
+  .follow {
+    width: 60%;
+    &__text {
+      font-size: 28px;
+      font-weight: 300;
+      margin: 0;
+      color: #3d1295;
+      &-bold {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0;
+        color: #3d1295;
+      }
+    }
+    &__buttons {
+      text-align: center;
+      display: flex;
+      margin-top: 4px;
+    }
+    &__face,
+    &__linked {
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 14px 45px;
+      }
+      &::after {
+        right: 27px;
+      }
+      &:hover {
+        &::after {
+          right: 23px;
+        }
+      }
+    }
+
+    &__face {
+      width: 269px;
+      margin-right: 50px;
+    }
+    &__linked {
+      width: 254px;
+    }
+  }
+
+  // RIGHT SIDE
+  &__form {
+    p {
+      margin: 0;
+    }
+    &-title {
+      margin-top: 0;
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+  }
+
+  .coop {
+    &__text {
+      font-size: 28px;
+      font-weight: 300;
+      margin: 0;
+      color: #c75400;
+      &-bold {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0;
+        color: #c75400;
+      }
+    }
+    &__button {
+      margin-top: 20px;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 14px 45px;
+      }
+      &-text {
+        width: 459px;
+        &::after {
+          right: 27px;
+        }
+        &:hover {
+          &::after {
+            right: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+input,
+textarea {
+  width: 536px;
+  font-size: 22px;
+  padding: 15px 43px;
+  border-radius: 30px;
+  border: 2px solid #030195;
+  margin-bottom: 15px;
+  &::placeholder {
+    color: #d6d4ff;
+    font-family: "Poppins";
+  }
+}
+input {
+  height: 61px;
+}
+textarea {
+  height: 152px;
+  resize: none;
+  margin-bottom: 15px;
+}
+.contact-form__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: -15px;
+  margin-bottom: 0;
+  max-width: 540px;
+  letter-spacing: 0.8px;
+}
+
+.submit__btn {
+  width: 190px;
+  position: relative;
+  height: 52px;
+  margin-top: 40px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    right: 30px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+  }
+
+  &:hover {
+    &::after {
+      right: 24px;
+    }
+  }
+}
+input[type="submit"] {
+  position: relative;
+  width: 190px;
+  height: 100%;
+  border-radius: 36px;
+  padding: 14px 45px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #01004b,
+    #030195,
+    #01004b,
+    #030195
+  );
+  border: none;
+  &:hover {
+    background-position: 100% 0;
+    &::after {
+      right: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .page-contact {
+    &__body-left,
+    .follow {
+      width: 49%;
+    }
+    .coop__button {
+      margin-top: 63px;
+    }
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .page-contact {
+    &__body-left,
+    .follow {
+      width: 50%;
+      margin-right: 65px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      &-bold {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .coop__button {
+      margin-top: 46px;
+      font-size: 13px;
+      width: 100%;
+      &::after {
+        width: 16px;
+        height: 16px;
+      }
+      &-text {
+        font-size: 15px;
+      }
+    }
+    &__form {
+      &-title {
+        font-size: 24px;
+        line-height: 30px;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #wpcf7-f62-o1 {
+        width: 80%;
+        margin: 0 auto;
+      }
+      input,
+      textarea {
+        width: 100%;
+        font-size: 18px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      input {
+        height: 55px;
+      }
+      .contact-form__text {
+        max-width: 100%;
+      }
+      .submit__btn {
+        width: 160px;
+        input {
+          width: 100%;
+        }
+        &::after {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    &__contact-container {
+      font-size: 19px;
+    }
+    &__image {
+      margin-right: 10px;
+    }
+
+    .follow,
+    .coop {
+      &__text {
+        font-size: 24px;
+        line-height: 30px;
+        &-bold {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+    .follow {
+      &__face,
+      &__linked {
+        width: 200px;
+        font-size: 13px;
+        line-height: 24px;
+        &::after {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &__face {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $lg - 1px) {
+  .page-contact {
+    &__inner {
+      margin-bottom: 90px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+    &__body {
+      flex-direction: column;
+      &-left {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &-right {
+        margin-top: 50px;
+      }
+    }
+    &__form {
+      #wpcf7-f62-o1 {
+        width: 65%;
+      }
+    }
+    &__bottom {
+      flex-direction: column;
+    }
+    .follow,
+    .coop {
+      width: 100%;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .coop {
+      margin-top: 30px;
+      &__button {
+        margin-top: 15px;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md - 1px) {
+  .page-contact {
+    &__body {
+      &-left {
+        width: 100%;
+      }
+    }
+    &__form {
+      #wpcf7-f62-o1 {
+        width: 85%;
+      }
+    }
+    .follow {
+      text-align: center;
+    }
+    .coop__button {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .page-contact {
+    &__inner {
+      margin-top: 50px;
+    }
+    &__body {
+      margin-top: 40px;
+      &-left {
+        align-items: flex-start;
+      }
+    }
+
+    &__text {
+      font-size: 22px;
+      line-height: 24px;
+      &-bold {
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+    &__contact-container {
+      font-size: 16px;
+      letter-spacing: 1px;
+      img {
+        max-width: 35px;
+        margin-right: 12px;
+      }
+    }
+
+    &__address {
+      &-first,
+      &-second {
+        margin-top: 30px;
+      }
+    }
+
+    .follow,
+    .coop {
+      &__text {
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+        &-bold {
+          font-size: 22px;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+    .follow {
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__face {
+        margin-right: 0;
+      }
+      &__linked {
+        margin-top: 0;
+      }
+    }
+    .coop {
+      &__button {
+        width: 96%;
+        text-align: center;
+        a {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  #wpcf7-f62-o1 {
+    width: 100%;
+  }
+  input {
+    font-size: 16px;
+    height: 50px;
+  }
+  textarea {
+    font-size: 16px;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .submit__btn {
+    margin-top: 20px;
+  }
+
+  .page-contact__text-bold {
+    width: 100%;
+  }
+  .page-contact__form-title {
+    width: 100%;
+  }
+  .page-contact__form #wpcf7-f62-o1 {
+    width: 100% !important;
+  }
+  .page-contact__form .submit__btn {
+    margin-left: auto;
+    height: 50px;
+    input {
+      height: 50px;
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+}

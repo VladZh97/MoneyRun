@@ -1,0 +1,109 @@
+@mixin arrow {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+  }
+}
+
+@mixin titleTop($fontSize, $decWidth, $marginRight) {
+  &__top-title {
+    display: flex;
+    align-items: center;
+    color: #3d1295;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: $fontSize;
+    letter-spacing: 3.6px;
+    margin: 0;
+    margin-right: $marginRight;
+  }
+  &__decoration {
+    position: relative;
+    width: $decWidth;
+    height: 6px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #8260ce, #3d1295);
+    margin-left: 92px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-color: #3d1295;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    &::before {
+      left: -42px;
+    }
+    &::after {
+      left: -92px;
+    }
+  }
+
+  @media screen and (max-width: $lg - 1px) {
+    &__title {
+      font-size: 50px;
+      letter-spacing: 2.6px;
+      margin-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: $md - 1px) {
+    &__title {
+      margin-right: 20px;
+    }
+    &__decoration {
+      margin-left: 60px;
+      &::before {
+        left: -25px;
+      }
+      &::after {
+        left: -57px;
+      }
+    }
+  }
+  @media screen and (max-width: $sm - 1px) {
+    &__title {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+    &__decoration {
+      margin-left: 25px;
+      &::before {
+        left: -18px;
+      }
+      &::after {
+        left: -35px;
+      }
+    }
+  }
+}
+
+@mixin brokerNumber($number) {
+  &::after {
+    content: $number;
+    position: absolute;
+    top: -120px;
+    left: -70px;
+    font-size: 250px;
+    color: #eeedff;
+    z-index: -1;
+    font-weight: 700;
+  }
+  @media screen and (max-width: $md - 1px) {
+    &::after {
+      left: -28px;
+    }
+  }
+}

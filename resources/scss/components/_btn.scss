@@ -1,0 +1,85 @@
+.btn {
+  // padding:12px 66px 14px 54px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1.08px;
+  border-radius: 36px;
+  box-shadow: 0px 3px 6px #d3d3d3;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-position: 100% 0;
+  }
+  &--blue {
+    background-image: linear-gradient(
+      to right,
+      #01004b,
+      #030195,
+      #01004b,
+      #030195
+    );
+  }
+  &--orange {
+    background-image: linear-gradient(
+      to right,
+      #c75400,
+      #ff9d00,
+      #c75400,
+      #ff9d00
+    );
+  }
+  &--purple {
+    background-image: linear-gradient(
+      to right,
+      #3d1295,
+      #8260ce,
+      #3d1295,
+      #8260ce
+    );
+  }
+  @include arrow;
+  &--more {
+    width: 190px;
+    padding-right: 26px;
+    &:before {
+      right: 36px;
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: -40px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 25px;
+  width: 4px;
+  border-radius: 10px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}

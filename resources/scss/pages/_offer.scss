@@ -1,0 +1,585 @@
+.page-offer {
+  padding-bottom: 80px;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 1920px;
+    height: 3005px;
+    background: url("../img/onas/tlo11.png");
+    top: -190px;
+    z-index: -1;
+  }
+  .sec1 {
+    margin-top: 82px;
+    .sec1-boxs {
+      display: flex;
+      flex-wrap: wrap;
+      .sec1-box {
+        color: $purple;
+        &:nth-child(odd) {
+          margin-right: 110px;
+          .sec1-box__content {
+            max-width: 100%;
+            width: 630px;
+          }
+        }
+        &:nth-child(even) {
+          .sec1-box__content {
+            max-width: 100%;
+            width: 590px;
+            // width: 100%;
+            // max-width: 590px;
+          }
+        }
+        &:last-child {
+          .sec1-box__header {
+            color: $orange;
+          }
+          .sec1-box__content {
+            color: $orange-dark;
+            font-weight: 500;
+          }
+          .sec1-box__btn {
+            background: transparent;
+            background-image: linear-gradient(
+              to right,
+              #c75400,
+              #ff9d00,
+              #c75400,
+              #ff9d00
+            );
+            background-size: 300% 100%;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+              background-position: 100% 0;
+              &::after {
+                right: 26px;
+              }
+            }
+          }
+        }
+        &__header {
+          font-size: 28px;
+          line-height: 44px;
+          font-weight: 500;
+          letter-spacing: 1.68px;
+          margin: 0;
+          margin-top: -56px;
+        }
+        &__content {
+          margin-top: 30px;
+        }
+        &__btn {
+          margin-top: 44px;
+          width: 284px;
+          height: 52px;
+          padding: 0;
+          font-weight: bold;
+          padding-right: 18px;
+          &:after {
+            right: 30px;
+          }
+          &:hover {
+            &::after {
+              right: 26px;
+            }
+          }
+        }
+        &__img {
+          margin-top: 16px;
+          img {
+            position: relative;
+            left: -80px;
+          }
+        }
+      }
+    }
+  }
+  .sec2 {
+    margin-top: 150px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 1920px;
+      // height: 2816px;
+      height: 2000px;
+      background: url("../img/onas/tlo22.png");
+      top: -270px;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .sec2-boxs {
+      margin-top: 68px;
+      display: flex;
+      .sec2-box {
+        max-width: 100%;
+        width: 630px;
+        &__header {
+          color: $orange-dark;
+          font-size: 28px;
+          line-height: 44px;
+          letter-spacing: 1.68px;
+          margin: 0;
+          font-weight: 500;
+        }
+        &:nth-child(2) {
+          margin-left: 110px;
+          max-width: 100%;
+          width: 580px;
+          .sec2-box__header {
+            color: $blue;
+          }
+          .sec2-list {
+            &__item {
+              color: $blue;
+            }
+          }
+        }
+      }
+      .sec2-list {
+        margin: 0;
+        padding: 0;
+        margin-top: 48px;
+        list-style: none;
+        &__item {
+          margin-bottom: 36px;
+          position: relative;
+          padding-left: 50px;
+          color: $orange-dark;
+          line-height: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-image: url("../img/onas/kasa-mala.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 1px;
+          }
+        }
+        &--orange {
+          .sec2-list__item {
+            &:before {
+              background-image: url("../img/onas/kasa-mala-orange.png");
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec3 {
+    margin-top: 104px;
+    .main-header {
+      line-height: 78px;
+    }
+    .sec3-boxs {
+      display: flex;
+      margin-top: 55px;
+      .sec3-box {
+        max-width: 100%;
+        width: 630px;
+
+        // &__header {
+        //     color: $orange-dark;
+        //     font-size: 28px;
+        //     line-height: 44px;
+        //     letter-spacing: 1.68px;
+        //     margin: 0;
+        // }
+        &:nth-child(2) {
+          margin-left: 110px;
+          max-width: 100%;
+          width: 580px;
+          .sec3-list {
+            &__item {
+              color: $orange-dark;
+            }
+          }
+        }
+      }
+      .sec3-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        &__item {
+          margin-bottom: 36px;
+          position: relative;
+          padding-left: 50px;
+          color: $orange-dark;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-image: url("../img/onas/target.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+  .sec4 {
+    display: flex;
+    align-items: center;
+    margin-top: 68px;
+    span {
+      font-size: 28px;
+      line-height: 44px;
+      font-weight: 500;
+      letter-spacing: 1.68px;
+    }
+    &__btn {
+      margin-left: 28px;
+      width: 351px;
+      height: 54px;
+      font-weight: bold;
+      padding-right: 38px;
+      &::after {
+        right: 52px;
+      }
+      &:hover {
+        &::after {
+          right: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xxl - 1px) {
+  .page-offer {
+    .sec1 {
+      .sec1-boxs {
+        justify-content: space-between;
+        .sec1-box {
+          width: 46%;
+          &:nth-child(odd) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $xl - 1px) {
+  .main-header,
+  .page-offer .sec3 .main-header {
+    line-height: 70px;
+  }
+  .text-main--18 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .page-offer .sec1 .sec1-boxs .sec1-box__header {
+    font-size: 24px;
+  }
+
+  .page-offer .sec2 .sec2-boxs .sec2-box__header {
+    line-height: 35px;
+  }
+  .page-offer .sec2 .sec2-boxs .sec2-list__item {
+    margin-bottom: 15px;
+  }
+  .page-offer {
+    .main-header {
+      font-size: 55px;
+    }
+  }
+}
+@media screen and (max-width: $lg - 1px) {
+  .page-offer {
+    .sec1 {
+      .sec1-boxs {
+        flex-direction: column;
+        .sec1-box {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .sec2-boxs {
+    flex-direction: column;
+  }
+
+  .page-offer .sec2 .sec2-boxs .sec2-box:nth-child(2) {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .page-offer .sec3 {
+    margin-top: 60px;
+  }
+
+  .page-offer .sec3 .sec3-boxs {
+    flex-direction: column;
+  }
+  .page-offer .sec3 .sec3-boxs .sec3-list__item {
+    margin-bottom: 25px;
+  }
+  .page-offer .sec3 .sec3-boxs .sec3-box:nth-child(2) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .page-offer .sec4 {
+    margin-top: 40px;
+  }
+  .page-offer .sec4 span {
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: $md - 1px) {
+  .page-offer .main-header {
+    text-align: center;
+  }
+  .page-offer .sec1 {
+    margin-top: 50px;
+  }
+  .main-header,
+  .page-offer .sec3 .main-header {
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 2px;
+  }
+  .page-offer .sec1 .sec1-boxs .sec1-box__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    img {
+      left: 0;
+    }
+  }
+  .page-offer .sec4 {
+    flex-direction: column;
+  }
+  .page-offer .sec4 span {
+    margin-bottom: 20px;
+  }
+  .page-offer .sec4__btn {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .page-offer .main-header {
+    font-size: 47px;
+    line-height: 55px;
+  }
+  .page-offer .sec1 .sec1-boxs .sec1-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-offer .sec1 .sec1-boxs .sec1-box__btn {
+    align-self: center;
+  }
+  .main-header,
+  .page-offer .sec3 .main-header {
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .page-offer .sec2 {
+    margin-top: 70px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .page-offer .sec1 .sec1-boxs .sec1-box__header {
+    line-height: 32px;
+  }
+  .page-offer .sec1 .sec1-boxs .sec1-box__content {
+    margin-top: 15px;
+  }
+
+  .page-offer .sec2 .sec2-boxs .sec2-list__item,
+  .page-offer .sec3 .sec3-boxs .sec3-list__item {
+    font-size: 17px;
+    line-height: 25px;
+    padding-left: 35px;
+  }
+  .page-offer .sec4__btn {
+    width: 290px;
+  }
+  .page-offer .sec2 .sec2-boxs .sec2-box__header {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .page-offer .sec2 .sec2-boxs .sec2-list {
+    margin-top: 30px;
+  }
+  br {
+    display: none;
+  }
+}
+
+.page-offer {
+  .wpcf7 {
+    max-width: 1100px;
+    max-height: 98%;
+    padding: 20px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: white;
+      -webkit-box-shadow: none;
+    }
+    &::-webkit-scrollbar-thumb:window-inactive {
+      background: none;
+    }
+  }
+
+  input[name="your-name"],
+  .your-name {
+    width: 100%;
+  }
+
+  input[name="your-name"] {
+    margin-bottom: 31px;
+  }
+
+  .order-form {
+    &__bottom-main {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 1.32px;
+      color: #030195;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+
+    .close {
+      right: -8px;
+      top: -30px;
+    }
+  }
+  .your-email,
+  .tel-48 {
+    width: 49%;
+  }
+
+  input[name="your-email"],
+  input[name="tel-48"] {
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .page-offer {
+    .wpcf7 {
+      max-width: 98%;
+    }
+
+    input[name="your-name"] {
+      margin-bottom: 15px;
+    }
+
+    .order-form {
+      &__bottom-main {
+        & + p {
+          margin-top: 0;
+        }
+      }
+      &__text {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+      &__submit::after {
+        top: 50%;
+      }
+    }
+
+    input[name="your-email"],
+    input[name="tel-48"],
+    input[name="your-name"] {
+      height: 50px;
+    }
+
+    input[type="submit"] {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $lg - 1px) {
+  .page-offer {
+    .wpcf7 {
+      max-height: 600px;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .page-offer {
+    .wpcf7 {
+      max-height: 97%;
+      padding: 20px 8px;
+    }
+
+    .your-email,
+    .tel-48 {
+      width: 100%;
+    }
+    .your-email {
+      margin-bottom: 15px;
+    }
+    .order-form {
+      &__bottom-main {
+        flex-direction: column;
+        & + p {
+          margin-bottom: 0;
+        }
+      }
+      &__text {
+        font-size: 15px;
+      }
+      .close {
+        right: 5px;
+      }
+    }
+
+    input[name="your-name"],
+    input[name="your-email"],
+    input[name="tel-48"],
+    textarea {
+      padding-left: 20px;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+}

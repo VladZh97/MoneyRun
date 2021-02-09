@@ -1,0 +1,646 @@
+.page-about-us {
+  padding-bottom: 44px;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 1920px;
+    height: 5707px;
+    background: url("../img/onas/tlo3.png");
+    top: -244px;
+    background-position: top center;
+    z-index: -1;
+  }
+  .sec1 {
+    margin-top: 110px;
+    display: flex;
+    &__img {
+      width: 50%;
+      img {
+        min-width: 840px;
+        position: relative;
+        left: -128px;
+      }
+    }
+    &__content {
+      margin-left: 10px;
+      width: 50%;
+      h2 {
+        margin-bottom: 56px;
+      }
+      .btn {
+        margin-top: 42px;
+        margin-bottom: 40px;
+      }
+    }
+    &__text {
+      margin-top: 50px;
+    }
+  }
+  .sec3 {
+    margin-top: 50px;
+    .sec3-list {
+      margin: 0;
+      padding: 0;
+      margin-top: 36px;
+      list-style: none;
+      &__item {
+        margin-bottom: 36px;
+        position: relative;
+        padding-left: 50px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          background-image: url("../img/onas/kasa-mala.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          left: 0;
+          top: 1px;
+        }
+      }
+    }
+  }
+  .sec4 {
+    margin-top: 60px;
+    &__text-top {
+      margin-top: 40px;
+    }
+    .sec4-crew {
+      margin-top: 60px;
+      &__box {
+        display: flex;
+        align-items: center;
+        &:nth-child(2) {
+          margin-top: -104px;
+        }
+        &:nth-child(3) {
+          margin-top: -166px;
+        }
+        &:nth-child(4) {
+          margin-top: -144px;
+        }
+        &:nth-child(5) {
+          margin-top: -156px;
+        }
+        &:nth-child(6) {
+          margin-top: -150px;
+        }
+        &:nth-child(7) {
+          margin-top: -194px;
+        }
+      }
+
+      &__img {
+        max-width: 100%;
+        width: 625px;
+        margin-left: -75px;
+        // background-color: red;
+        img {
+          position: relative;
+          margin-left: -10px;
+        }
+      }
+      &__content {
+        flex: 1;
+      }
+      &__header {
+        font-size: 28px;
+        letter-spacing: 1.68px;
+        line-height: 30px;
+        font-weight: 500;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+      &__contact {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__email {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 26px;
+        }
+        a {
+          font-weight: 500;
+          letter-spacing: 1.08px;
+        }
+      }
+      &__btn {
+        width: 296px;
+        height: 52px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 25px;
+        text-align: center;
+        justify-content: center;
+        &:after {
+          right: 30px;
+        }
+        &:hover {
+          &::after {
+            right: 26px;
+          }
+        }
+      }
+    }
+  }
+  .sec5 {
+    margin-top: 15px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 1920px;
+      height: 2000px;
+      background: url(../img/onas/tlo4.png);
+      background-position: top center;
+      top: -290px;
+      z-index: -1;
+      /* background: red; */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .main-header {
+      max-width: 700px;
+      line-height: 78px;
+    }
+    &__boxs {
+      margin-top: 20px;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      &:nth-child(2) {
+        margin-top: -56px;
+      }
+      &:nth-child(3) {
+        margin-top: -70px;
+      }
+      &:nth-child(4) {
+        margin-top: -70px;
+      }
+    }
+    &__img {
+      max-width: 100%;
+      width: 400px;
+      margin-left: -50px;
+      // img{
+      //     margin-left: -20px;
+      // }
+    }
+    &__content {
+      flex: 1;
+      position: relative;
+    }
+    &__btn {
+      right: 0;
+      position: absolute;
+      margin-top: 36px;
+      width: 296px;
+      height: 52px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      padding-right: 40px;
+      text-align: center;
+      justify-content: center;
+      &:after {
+        right: 30px;
+      }
+      &:hover {
+        &::after {
+          right: 26px;
+        }
+      }
+    }
+  }
+  .main-header-second {
+    display: none;
+  }
+}
+.sec1__text.text-main--18,
+.sec2__content.text-main--18 {
+  h3 {
+    font-weight: 500 !important;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: $xxl - 1px) {
+  .page-about-us {
+    .sec1__img img {
+      min-width: 626px;
+      left: -29px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .sec4 {
+      .sec4-crew {
+        &__box {
+          margin-bottom: 100px;
+        }
+        &__img {
+          width: 470px;
+          margin-left: -40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .page-about-us {
+    .sec1__img img {
+      min-width: 100%;
+      left: 0;
+    }
+    .sec4 {
+      .sec4-crew {
+        &__box {
+          margin-bottom: 170px;
+        }
+        &__img {
+          width: 350px;
+          margin-left: -30px;
+        }
+        &__email {
+          img {
+            margin-right: 10px;
+          }
+          a {
+            font-size: 16px;
+          }
+          &__btn {
+            width: 245px;
+            height: 46px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $lg - 1px) {
+  .page-about-us {
+    .sec1 {
+      flex-direction: column;
+      .main-header {
+        display: none;
+        &.main-header-second {
+          display: block !important;
+        }
+      }
+      &__content {
+        width: 100%;
+        margin-left: 0;
+      }
+      &__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          top: 45px;
+          transform: translateY(0);
+          min-width: 80%;
+          max-width: 80%;
+        }
+      }
+    }
+
+    .sec4 {
+      .sec4-crew {
+        margin-top: 0;
+        &__box {
+          margin-bottom: 150px;
+          flex-direction: column;
+        }
+        &__img {
+          width: 410px;
+          margin-left: 0;
+          img {
+            margin-left: 0;
+            transform: translateY(40px);
+          }
+        }
+        &__email {
+          a {
+            font-size: 16px;
+          }
+          &__btn {
+            width: 245px;
+            height: 46px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    .sec5 {
+      &__box {
+        flex-direction: column;
+        margin-bottom: 100px;
+      }
+      &__img {
+        margin-left: 0;
+        img {
+          transform: translateY(40px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $md - 1px) {
+  .page-about-us {
+    .sec1 {
+      &__img {
+        img {
+          top: 35px;
+          min-width: 90%;
+          max-width: 90%;
+        }
+      }
+    }
+
+    .sec4 {
+      .sec4-crew {
+        margin-top: 0;
+        &__img {
+          width: 375px;
+          img {
+            transform: translateY(20px);
+          }
+        }
+        &__contact {
+          flex-direction: column;
+          margin-top: 30px;
+        }
+        &__btn {
+          margin-top: 25px;
+        }
+
+        &__box:nth-child(7) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .sec5 {
+      &__box {
+        margin-bottom: 130px;
+      }
+      &__img {
+        img {
+          transform: translateY(20px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .page-about-us {
+    .main-header-second {
+      font-size: 50px;
+    }
+    .sec1 {
+      &__img {
+        img {
+          top: 35px;
+          min-width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .sec3 {
+      .sec3-list__item {
+        margin-bottom: 18px;
+        padding-left: 35px;
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+
+    .sec4 {
+      .sec4-crew {
+        &__img {
+          width: 100%;
+          img {
+            transform: translateY(15px);
+          }
+        }
+        &__email img {
+          width: 30px;
+        }
+      }
+    }
+
+    .sec5 {
+      .main-header {
+        font-size: 26px;
+        line-height: 35px;
+      }
+      &__box {
+        margin-bottom: 130px;
+      }
+      &__img {
+        img {
+          transform: translateY(20px);
+        }
+      }
+      &__btn {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    .sec1__text.text-main--18,
+    .sec2__content.text-main--18 {
+      h3 {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// POPUP FORM
+
+.order__form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(7px);
+  transition: all 0.3s ease-in-out;
+  .wpcf7 {
+    border: 2px solid #3d1295;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 64px 63px 30px;
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.order-form {
+  position: relative;
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  input[name="your-name"],
+  input[name="your-email"] {
+    width: 526px;
+    margin-bottom: 0;
+  }
+  input[name="your-name"] {
+    margin-right: 18px;
+  }
+  textarea {
+    width: 100%;
+    height: 221px;
+    margin-top: 31px;
+  }
+
+  input[name="your-name"],
+  input[name="your-email"],
+  input[name="tel-48"],
+  textarea {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #3d1295;
+    &::placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1.08px;
+      color: #3d1295;
+      font-weight: 500;
+    }
+  }
+  &__submit {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 45px;
+      top: 39%;
+      transform: translateY(-50%) rotate(-45deg);
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      width: 16px;
+      height: 16px;
+      transition: all 0.2s ease-in-out;
+      pointer-events: none;
+    }
+    &:hover {
+      &::after {
+        right: 41px;
+      }
+    }
+    input[type="submit"] {
+      background-image: linear-gradient(
+        to right,
+        #3d1295,
+        #8260ce,
+        #3d1295,
+        #8260ce
+      );
+    }
+  }
+
+  .close {
+    display: flex;
+    right: -32px;
+  }
+}
+
+@media screen and (max-width: $xxl - 1px) {
+  .order-form {
+    input[name="your-name"],
+    input[name="your-email"] {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .order__form {
+    .wpcf7 {
+      padding: 45px 30px 30px;
+    }
+
+    .close {
+      top: -32px;
+      right: -18px;
+    }
+  }
+}
+
+@media screen and (max-width: $lg - 1px) {
+  .order-form {
+    &__top {
+      display: block;
+    }
+    input[name="your-name"],
+    input[name="your-email"] {
+      width: 400px;
+    }
+    input[name="your-name"] {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 400px;
+      height: 221px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .order__form {
+    .wpcf7 {
+      padding: 35px 15px 15px;
+      margin: 0 5px;
+    }
+  }
+
+  .order-form {
+    &__top {
+      display: block;
+    }
+    input[name="your-name"],
+    input[name="your-email"] {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    .close {
+      right: 0;
+    }
+  }
+}

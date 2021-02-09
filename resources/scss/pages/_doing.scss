@@ -1,0 +1,361 @@
+.doing {
+  &__inner {
+    margin-top: 60px;
+    margin-bottom: 66px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 110%;
+      background: url("../img/doing/Tlojakdzialamy.png");
+      top: -180px;
+      background-position: top center;
+      z-index: -1;
+    }
+  }
+  &__top {
+    &-items {
+      margin: 70px auto 0;
+      max-width: 75%;
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-top: 21px;
+        margin-left: auto;
+      }
+    }
+    &-item {
+      max-width: 910px;
+      position: relative;
+      margin-bottom: 87px;
+      &-title {
+        font-size: 28px;
+        line-height: 30px;
+        letter-spacing: 1.68px;
+        font-weight: 500;
+        margin: 0;
+      }
+      &-text {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1.08px;
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        @include brokerNumber("1");
+      }
+
+      &.list-item {
+        &:nth-child(odd) {
+          transform: translateX(300px);
+        }
+        &:nth-child(1) {
+          @include brokerNumber("2");
+        }
+        &:nth-child(2) {
+          @include brokerNumber("3");
+        }
+        &:nth-child(3) {
+          @include brokerNumber("4");
+        }
+        &:nth-child(4) {
+          @include brokerNumber("5");
+        }
+        &:nth-child(5) {
+          @include brokerNumber("6");
+        }
+      }
+    }
+  }
+  &__middle {
+    margin-top: 91px;
+    &-items {
+      margin-top: 57px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 21px;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 82px;
+    color: #3d1295;
+    &-items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      max-width: 32%;
+      margin-bottom: 70px;
+      &-text {
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 500;
+      }
+    }
+    &-image {
+      margin-right: 32px;
+    }
+
+    &-contact {
+      display: flex;
+      align-items: center;
+      &-text {
+        font-size: 35px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-right: 54px;
+      }
+    }
+  }
+  &__item-link {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    &::after {
+      right: 30px;
+    }
+    &:hover {
+      &::after {
+        right: 26px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 52px;
+    }
+  }
+}
+
+.main-title {
+  font-size: 60px;
+  letter-spacing: 3.6px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: $xxl - 1px) {
+  .doing {
+    &__top {
+      &-items {
+        a {
+          margin-right: 50px;
+        }
+      }
+      &-item {
+        &:nth-child(1) {
+          &::after {
+            left: -15px;
+          }
+        }
+
+        &.list-item.list-item {
+          &::after {
+            left: -30px;
+          }
+          &:nth-child(odd) {
+            transform: translateX(170px);
+          }
+        }
+      }
+    }
+
+    &__middle {
+      margin-top: 30px;
+    }
+
+    &__bottom {
+      &-item {
+        max-width: 47%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .doing {
+    &__top {
+      &-item {
+        max-width: 700px;
+
+        &.list-item.list-item {
+          &:nth-child(odd) {
+            transform: translateX(115px);
+          }
+        }
+      }
+    }
+  }
+  .main-title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: $lg - 1px) {
+  .doing {
+    &__top {
+      &-items {
+        max-width: 100%;
+      }
+      &-item {
+        &-title {
+          font-size: 24px;
+        }
+        &-text {
+          font-size: 17px;
+          line-height: 27px;
+        }
+        &.list-item.list-item {
+          &:nth-child(odd) {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+    &__middle {
+      &-items {
+        margin-top: 0;
+      }
+      &-item {
+        &-text {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__bottom {
+      &-contact-text {
+        font-size: 30px;
+      }
+      &-item-text {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    &__item {
+      &-link {
+        width: 270px;
+        height: 47px;
+        font-size: 15px;
+        a {
+          line-height: 47px;
+        }
+      }
+    }
+  }
+  .main-title {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: $md - 1px) {
+  .doing {
+    &__top {
+      &-item {
+        &:nth-child(1) {
+          &::after {
+            font-size: 200px;
+            top: -90px;
+          }
+        }
+
+        &.list-item.list-item {
+          &::after {
+            font-size: 200px;
+            top: -90px;
+
+            left: -15px;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      &-item {
+        max-width: 66%;
+        &:nth-child(even) {
+          transform: translateX(150px);
+        }
+      }
+      &-contact {
+        flex-direction: column;
+        align-items: center;
+        &-text {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .main-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .doing {
+    &__top {
+      &-items {
+        margin-top: 40px;
+        a {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      &-item {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__middle {
+      margin-top: 0;
+    }
+
+    &__bottom {
+      &-item {
+        max-width: 100%;
+        &:nth-child(even) {
+          transform: translateX(0);
+        }
+        &-text {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+      &-image {
+        max-width: 55px;
+        margin-right: 20px;
+      }
+
+      &-contact {
+        flex-direction: column;
+        align-items: center;
+        &-text {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .main-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

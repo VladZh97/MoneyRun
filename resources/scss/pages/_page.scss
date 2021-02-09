@@ -1,0 +1,95 @@
+.main-header {
+    font-size: 60px;
+    line-height: 90px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--blue {
+        color: $blue;
+        .main-header__line {
+            background: transparent linear-gradient(90deg, #01004b 0%, #030195 100%) 0% 0% no-repeat padding-box;
+            &:after,
+            &:before {
+                background: transparent linear-gradient(270deg, #030195 0%, #01004b 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+    &--purple {
+        color: $purple;
+        .main-header__line {
+            background: transparent linear-gradient(90deg, #3d1295 0%, #8260ce 100%) 0% 0% no-repeat padding-box;
+            &:after,
+            &:before {
+                background: transparent linear-gradient(270deg, #3d1295 0%, #8260ce 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+    &--orange {
+        color: $orange;
+        .main-header__line {
+            background: transparent linear-gradient(90deg, #c75400 0%, #ff9d00 100%) 0% 0% no-repeat padding-box;
+            &:after,
+            &:before {
+                background: transparent linear-gradient(270deg, #c75400 0%, #ff9d00 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+    &__line {
+        position: relative;
+        display: inline-block;
+        height: 6px;
+        border-radius: 60px;
+        flex: 0.95;
+        margin-left: 100px;
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            right: -100px;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            border-radius: 60px;
+            transform: matrix(-1, 0, 0, -1, 0, 0);
+        }
+        &:after {
+            right: -50px;
+        }
+    }
+}
+.text-main {
+    &--18 {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1.08px;
+        line-height: 30px;
+        b,
+        strong {
+            font-weight: 500;
+        }
+    }
+    &--22 {
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: 1.32px;
+        line-height: 35px;
+        b,
+        strong {
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+// PAGE
+.subpage {
+    margin-top: 70px;
+    h1 {
+        text-align: center;
+    }
+}
